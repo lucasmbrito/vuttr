@@ -25,4 +25,6 @@ Route.group(() => {
   Route.resource('tweets', 'TweetController')
   .apiOnly()
   .except('update');
+  Route.resource('tools', 'ToolController')
+  .apiOnly();
 }).middleware('auth')
